@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head><title>prcatice makig website</title>
+<meta charset="utf-8">
+<style>
+h1{
+font-family:monospace;
+font-language-override: inherit;
+text-align: right;
+margin-top: 4px;
+color: darkorange;
+margin-right: 20px;
+   }
+#divOne{
+    height: 600px;
+    background-color: #f2f16f;
+    margin-top:-8px;
+}
+.formElement{
+border-top-color: blue;
+border-left-color: royalblue;
+}
+.Button{
+    height: 30px;
+    width: 60px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: solid black;
+    background-color:darkcyan;
+    border-radius: 8px;
+    border-color: black;
+    font-weight: 500;
+}
+.formElement:hover{
+    height: 20px;
+    width: 200px;
+}
+.Button:hover{
+    height: 35px;
+    width:65px;
+    background-color: darkseagreen;
+    border-color: gray;
+}
+#divLeft{
+    margin-top: -6px;
+    float: left;
+    width: 81.95%;
+    height: 361px;
+    border:white;
+}
+#image:hover{
+    height: 370;
+    width: 90%;
+}
+#divLeft{
+    margin-top: 9px;
+}
+#divTwo{
+   background-color:lightgreen;
+   margin-top: 5px;
+   height: 100px;
+   margin-top: 3px;
+}
+#divTwo:hover{
+    font-size: larger;
+    font-style: italic;
+    background-color: crimson;
+    color:white;
+}
+.menu{
+display: inline-block;
+z-index: 1;
+position: fixed;
+background:transparent;
+left:0;
+top:16rem;
+}
+/* MENU Toggle */
+.menu{
+display: inline-block;
+z-index: 1;
+position: fixed;
+background:transparent;
+left:0;
+top:16rem;
+}
+ul{
+  display: none;
+  margin-top: 0;
+  margin-left: 0;
+}
+.menu-display{
+  display: block;
+}
+.menu-btn{
+
+  background-color:#84a;
+  border-radius: 15px;
+  position: fixed;
+  top:20px;
+  left:1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  text-align: center;
+}
+li{
+  list-style-type: none;
+  background-color: green;
+  color: #000;
+  margin-bottom:0.5rem;
+  border-radius: 20px;
+  border-color: #000;
+  border-width: thin;
+  border-style: solid;
+  padding:0.5rem;
+  width: 17rem;
+}
+li:hover{
+  width: 19rem;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+#forms{
+    background-position-y: 10px;
+}
+#footer{
+  background-color:royalblue;
+  height:80px;
+  margin-top: 48px;
+
+
+}
+.li{
+  color: red;
+}
+</style>
+<script>
+function myFunction(){
+document.querySelector("ul").classList.toggle("menu-display");
+document.querySelector(".menu-plus").classList.toggle("rotate");
+}
+</script>
+</head>
+<body bgcolor="black">
+<diV style="background-color:white;height:50px;padding-top: 16px;padding-bottom: 5px;margin-top: 0px;background-color:cadetblue;"><header><h1 >Surlodhi</h1></header></div>
+<div id="divOne" class="Container">
+<div id="divLeft"><img src="project.jpg" id="image"alt="realWebsite" style="background-color: black;" height="363px"width="100%" ></div>
+<form id="forms" ><fieldset style="margin-left: 1100px ;height: 351px;background-color:coral;"><legend>Registration page</legend>
+    <lable style>First Name</lable>
+    <br><input id="fName" class="formElement" type="text"><br><br>
+    <lable style>Last Name</lable>
+<br><input id="lName" class="formElement" type="text"><br><br>
+  <lable style>E-mail</lable>
+<br><input type="text" class="formElement"id="eMail"><br><br>
+<lable>Password</lable><br><input id="pass" class="formElement" type="password"><br><br>
+<lable>Confirm Password</lable><br><input id="passC" class="formElement" type="password"><br><br>
+<input id="cancel" class="Button" type="reset">&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" class="Button" id="login" value="Submit">
+</fieldset>
+</form>
+<div id="divTwo" style="font-family: monospace;"><span style="color: orangered;font-size:larger;" >Surjeet</span><span style="font-size: medium;">&nbsp;is the creator of this webpage.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+The features of this webpage are that it have one form which will collect all information from you<br>This form will have the attributes like first  name,last name..etc.<br>
+And for validation in the form we are going to use the javascript</br>
+</div>
+<div id="divMiddle">    <button class="menu-btn" onclick="myFunction()">Menu</button>
+    <div class="menu">
+
+      <ul>
+        <li><a href="#details">Dashboard</a></li>
+        <li><a href="#chart">Home</a></li>
+        <li><a >Login</a>
+      </ul>
+    </div>
+</div>
+<div id="footer"><br>
+  <label ><a href="#forms" >RegistrationPage</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a hreflang="#forms">Login page</a></label>
+
+</div>
+</div>
+</body>
+</html>
